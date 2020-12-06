@@ -13,6 +13,7 @@
     --txt-c-grey-light: var(--c-grey-light);
     --txt-c-accent: var(--c-accent);
     --txt-c-light: var(--c-light);
+    --txt-c-grey: var(--c-grey);
     /* font */
     --font-main: 'Acrom', sans-serif;
     /* container width */
@@ -52,5 +53,85 @@
 
 body {
     font-family: var(--font-main);
+    box-sizing: border-box;
+}
+
+.front-page {
+    width: 320px;
     background-color: var(--c-dark);
+    padding: 30px 10px 55px 10px;
+    text-align: center;
+}
+
+.front-page-name {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: var(--txt-c-accent);
+    margin-top: 50px;
+}
+
+.front-page-profession {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+}
+
+span.blink {
+    animation: blink 1s linear infinite;
+}
+
+.front-page-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--txt-c-light);
+}
+
+.front-page-description--secondary {
+    color: var(--txt-c-grey);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hire-me-btn {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-accent);
+    text-decoration: none;
+}
+
+.mobile-menu {
+    width: 30px;
+    height: 30px;
+    background: var(--c-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu i {
+    color: var(--c-light);
+    width: 10px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    110% {
+        opacity: 1;
+    }
 }
