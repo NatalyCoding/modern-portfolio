@@ -56,6 +56,25 @@ body {
     box-sizing: border-box;
 }
 
+
+/* COMMON */
+
+.accent-btn {
+    background-color: var(--c-accent);
+    color: var(--txt-c-light);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    outline: none;
+    border: none;
+}
+
+
+/* FRONT PAGE */
+
 .front-page {
     width: 320px;
     background-color: var(--c-dark);
@@ -92,6 +111,7 @@ span.blink {
 
 .front-page-description--secondary {
     color: var(--txt-c-grey);
+    margin-bottom: 30px;
 }
 
 .navigation {
@@ -129,6 +149,42 @@ span.blink {
 
 .mobile-menu i {
     color: var(--c-light);
+}
+
+.front-page-gallery-btn {
+    margin-bottom: 40px;
+}
+
+.front-page-my-photo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.front-page-video-descr {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    margin-bottom: 16px;
+}
+
+.front-page-my-video-btn {
+    color: var(--txt-c-accent);
+    border: 2px solid var(--c-accent);
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: transparent;
+    margin-bottom: 35px;
+}
+
+.front-page-my-video-btn .fa-play {
+    font-size: 14px;
+    margin-right: 7px;
+    outline: none;
 }
 
 @keyframes blink {
