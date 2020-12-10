@@ -187,6 +187,21 @@ span.blink {
     outline: none;
 }
 
+.front-page-laptop {
+    width: 250px;
+}
+
+.experince-title {
+    width: 240px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+}
+
 @keyframes blink {
     0% {
         opacity: 0;
